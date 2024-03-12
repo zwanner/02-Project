@@ -1,0 +1,283 @@
+/* Reset default styles */
+:root {
+    --panelBackground: #6096B4; /* Background color for panels */
+    --panelSecondary: #BDCDD6; /* Secondary color for panels */
+    --stylingColor: #285279; /* Styling color */
+    --mainBackground: #EEE9DA; /* Background color for main content */
+    --mainStylingColor: #93BFCF; /* Styling color for main content */
+}
+
+* {
+    margin: 0; /* Remove margin from all elements */
+    padding: 0; /* Remove padding from all elements */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Global styles */
+h1 {
+    font-size: 30px; /* Font size for heading 1 */
+    font-weight: bold; /* Bold font weight for heading 1 */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+
+/* Header styles */
+header {
+    display: flex; /* Display header as a flex container */
+    background-color: var(--panelBackground); /* Set background color for header */
+    color: var(--stylingColor); /* Set text color for header */
+    padding: 30px; /* Add padding to header */
+}
+
+header .titleDiv {
+    background-color: var(--panelSecondary); /* Set background color for title div */
+    position: relative; /* Set position to relative */
+    left: -35px; /* Move title div to the left */
+    max-width: 15%; /* Set maximum width for title div */
+    padding: 10px; /* Add padding to title div */
+    padding-left: 50px; /* Add left padding to title div */
+    padding-right: 200px; /* Add right padding to title div */
+    border-radius: 0 5px 20px 0; /* Set border radius for title div */
+    border: 2px solid var(--stylingColor); /* Set border for title div */
+}
+
+/* Navigation styles */
+header .navDiv {
+    position: absolute; /* Set position to absolute */
+    right: 20px; /* Move navigation div to the right */
+    padding: 10px; /* Add padding to navigation div */
+    font-size: 20px; /* Set font size for navigation div */
+    margin: 10px; /* Add margin to navigation div */
+}
+
+.navDiv nav ul {
+    list-style: none; /* Remove list style from navigation ul */
+    display: flex; /* Display navigation ul as a flex container */
+}
+
+.navDiv ul li a{
+    background-color: var(--panelSecondary); /* Set background color for navigation links */
+    margin-right: 10px; /* Add right margin to navigation links */
+    padding: 10px; /* Add padding to navigation links */
+    margin: 10px; /* Add margin to navigation links */
+    color: var(--stylingColor); /* Set text color for navigation links */
+    text-decoration: none; /* Remove underline from navigation links */
+    border-radius: 20px 5px 20px 5px; /* Set border radius for navigation links */
+    border: 2px solid var(--stylingColor); /* Set border for navigation links */
+}
+
+/* Main content styles */
+main {
+    padding: 0px; /* Remove padding from main content */
+    background-color: var(--mainBackground); /* Set background color for main content */
+}
+
+body {
+    display: flex; /* Display body as a flex container */
+    flex-direction: row; /* Set flex direction to row */
+    align-items: center; /* Center align items in body */
+}
+
+.aboutmeSection {
+    display: flex; /* Display about me section as a flex container */
+    flex-direction: row; /* Set flex direction to row */
+    align-items: center; /* Center align items in about me section */
+    justify-content: left; /* Align items to the left in about me section */
+    margin-left: 20px; /* Add left margin to about me section */
+    margin-right: 50px; /* Add right margin to about me section */
+    border-top: 5px solid var(--stylingColor); /* Add top border to about me section */
+    padding-top: 40px; /* Add top padding to about me section */
+    margin-top: 30px; /* Add top margin to about me section */
+}
+
+figure {
+    display: flex; /* Display figure as a flex container */
+    align-items: center; /* Center align items in figure */
+    flex-direction: column; /* Set flex direction to column */
+    margin: 20px; /* Add margin to figure */
+    padding: 10px; /* Add padding to figure */
+    border: 2px solid var(--stylingColor); /* Set border for figure */
+    background-color: var(--mainStylingColor); /* Set background color for figure */
+    max-width: 50%; /* Set maximum width for figure */
+    min-width: 30%; /* Set minimum width for figure */
+    border-radius: 0 5px 20px 0; /* Set border radius for figure */
+}
+
+figure .figureTitle {
+    position: relative; /* Set position to relative */
+    background-color: var(--panelSecondary); /* Set background color for figure title */
+    color: var(--stylingColor); /* Set text color for figure title */
+    padding: 15px; /* Add padding to figure title */
+    margin: 10px; /* Add margin to figure title */
+    border: 2px solid var(--stylingColor); /* Set border for figure title */
+    min-width: 30%; /* Set minimum width for figure title */
+}
+
+figure .figureText {
+    margin: 10px; /* Add margin to figure text */
+    color: var(--stylingColor); /* Set text color for figure text */
+    font-size: 20px; /* Set font size for figure text */
+}
+
+.myPhoto img {
+    height: 100%; /* Set height to 100% for my photo image */
+    width: 100%; /* Set width to 100% for my photo image */
+}
+
+.myPhoto {
+    background-color: var(--panelBackground); /* Set background color for my photo */
+    width: 40%; /* Set width for my photo */
+    border: none; /* Remove border from my photo */
+    border-radius: 0 0 0 0; /* Set border radius for my photo */
+}
+
+.workSection {
+    display: flex; /* Display work section as a flex container */
+    flex-direction: Column; /* Set flex direction to column */
+    align-items: center; /* Center align items in work section */
+    padding: 20px; /* Add padding to work section */
+    margin-right: 50px; /* Add right margin to work section */
+    margin-left: 50px; /* Add left margin to work section */
+    margin-top: 20px; /* Add top margin to work section */
+    min-height: 1000px; /* Set minimum height for work section */
+}
+
+#work {
+    font-size: 30px; /* Set font size for work section heading */
+    color: var(--stylingColor); /* Set text color for work section heading */
+    margin-bottom: 40px; /* Add bottom margin to work section heading */
+}
+
+.bigWork {
+    position: relative; /* Set position to relative */
+    background-image: url('https://images.pexels.com/photos/7862/pexels-photo.jpg?cs=srgb&dl=pexels-life-of-pix-7862.jpg&fm=jpg'); /* Set background image for big work */
+    min-width: 100%; /* Set minimum width for big work */
+    min-height: 400px; /* Set minimum height for big work */
+    border: 5px solid var(--panelBackground); /* Set border for big work */
+    margin: 5px; /* Add margin to big work */
+    margin-bottom: 20px; /* Add bottom margin to big work */
+}
+
+.bigWork .workTitle {
+    background-color: var(--panelSecondary); /* Set background color for big work title */
+    color: var(--stylingColor); /* Set text color for big work title */
+    padding: 15px; /* Add padding to big work title */
+    margin: 10px; /* Add margin to big work title */
+    border: 2px solid var(--stylingColor); /* Set border for big work title */
+    max-width: 10%; /* Set maximum width for big work title */
+}
+
+.smallerWorks {
+    display: flex; /* Display smaller works as a flex container */
+    flex-direction: row; /* Set flex direction to row */
+    align-items: center; /* Center align items in smaller works */
+    justify-content: center; /* Center align items horizontally in smaller works */
+    min-width: 100%; /* Set minimum width for smaller works */
+    min-height: 50%; /* Set minimum height for smaller works */
+}
+
+#LED {
+    background-image: url('https://www.churchproduction.com/downloads/14232/download/image02h.jpg?cb=3cf8b9083353a410e5ff0ac77203575b&w=1027'); /* Set background image for LED */
+    min-width: 49%; /* Set minimum width for LED */
+    min-height: 400px; /* Set minimum height for LED */
+    border: 5px solid var(--panelBackground); /* Set border for LED */
+    margin: 20px; /* Add margin to LED */
+}
+
+#calculator {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/U8JaYvumQNxwDTjbJCjUeL.jpg'); /* Set background image for calculator */
+    min-width: 49%; /* Set minimum width for calculator */
+    min-height: 400px; /* Set minimum height for calculator */
+    border: 5px solid var(--panelBackground); /* Set border for calculator */
+    margin: 20px; /* Add margin to calculator */
+}
+
+#puzzles {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Jigsaw_puzzle_01_by_Scouten.jpg/1200px-Jigsaw_puzzle_01_by_Scouten.jpg'); /* Set background image for puzzles */
+    min-width: 49%; /* Set minimum width for puzzles */
+    min-height: 400px; /* Set minimum height for puzzles */
+    border: 5px solid var(--panelBackground); /* Set border for puzzles */
+    margin: 20px; /* Add margin to puzzles */
+}
+
+#runBuddy {
+    background-image: url('https://runkeeper.com/cms/wp-content/uploads/sites/4/2022/12/Running-Image-12.jpg'); /* Set background image for run buddy */
+    min-width: 49%; /* Set minimum width for run buddy */
+    min-height: 400px; /* Set minimum height for run buddy */
+    border: 5px solid var(--panelBackground); /* Set border for run buddy */
+    margin: 20px; /* Add margin to run buddy */
+}
+
+.workTitle {
+    display: flex; /* Display work title as a flex container */
+    flex-direction: column; /* Set flex direction to column */
+    background-color: var(--panelSecondary); /* Set background color for work title */
+    color: var(--stylingColor); /* Set text color for work title */
+    padding: 15px; /* Add padding to work title */
+    margin: 10px; /* Add margin to work title */
+    border: 2px solid var(--stylingColor); /* Set border for work title */
+    max-width: 10%; /* Set maximum width for work title */
+}
+
+.aboutmeDiv {
+    max-width: 30%; /* Set maximum width for about me div */
+}
+
+.myLinks {
+    min-width: 30%; /* Set minimum width for my links */
+    min-height: 100%; /* Set minimum height for my links */
+}
+
+.contactSection {
+    display: flex; /* Display contact section as a flex container */
+    flex-direction: row; /* Set flex direction to row */
+    justify-content: center; /* Center align items horizontally in contact section */
+    padding: 20px; /* Add padding to contact section */
+    margin-right: 50px; /* Add right margin to contact section */
+    margin-left: 50px; /* Add left margin to contact section */
+    margin-top: 30px; /* Add top margin to contact section */
+    padding-top: 40px; /* Add top padding to contact section */
+    border-top: 5px solid var(--stylingColor); /* Add top border to contact section */
+}
+
+#contact {
+    font-size: 30px; /* Set font size for contact section heading */
+    color: var(--stylingColor); /* Set text color for contact section heading */
+    margin-bottom: 40px; /* Add bottom margin to contact section heading */
+    margin-right: 50px; /* Add right margin to contact section heading */
+}
+
+.contactDiv {
+    font-size: 30px; /* Set font size for contact div */
+}
+
+.contactDiv nav ul {
+    list-style: none; /* Remove list style from contact navigation ul */
+    display: flex; /* Display contact navigation ul as a flex container */
+    margin-top: 8px; /* Add top margin to contact navigation ul */
+}
+
+.contactDiv nav ul li a {
+    background-color: var(--panelSecondary); /* Set background color for contact navigation links */
+    margin-right: 10px; /* Add right margin to contact navigation links */
+    padding: 10px; /* Add padding to contact navigation links */
+    margin: 10px; /* Add margin to contact navigation links */
+    color: var(--stylingColor); /* Set text color for contact navigation links */
+    text-decoration: none; /* Remove underline from contact navigation links */
+    border-radius: 20px 5px 20px 5px; /* Set border radius for contact navigation links */
+    border: 2px solid var(--stylingColor); /* Set border for contact navigation links */
+}
+
+.bigWork:hover, #LED:hover, #calculator:hover, #puzzles:hover, #runBuddy:hover {
+    cursor: pointer; /* Set cursor to pointer on hover */
+    transform: scale(1.05); /* Scale up on hover */
+    transition: all 0.5s ease-in-out; /* Add transition effect on hover */
+}
+
+nav ul li:hover {
+    transform: scale(1.2); /* Scale up on hover */
+    transition: all 0.5s ease-in-out; /* Add transition effect on hover */
+}
